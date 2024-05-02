@@ -22,8 +22,14 @@ const displayData =tools =>{
           
           </ul>
         </div>
-        <div class="card-footer">
-          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        <div class="card-footer d-flex justify-content-between">
+        <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        ${tool.published_in}
+        </div>
+        <div>
+        <i class="fa-regular fa-circle-right"></i>
+        </div>
         </div>
       </div>
         
