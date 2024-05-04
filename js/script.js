@@ -7,6 +7,10 @@ const loadData =async() =>{
 const displayData =tools =>{
     console.log(tools)
     const toolContainer = document.getElementById('tools-container');
+    tools=tools.slice(0,6)
+    const showAll =document.getElementById('show-all').addEventListener('click',function(){
+     
+    })
     tools.forEach(tool=>{
         const toolsDiv=document.createElement('div');
         toolsDiv.classList.add('col');
@@ -27,7 +31,7 @@ const displayData =tools =>{
         <i class="fa-solid fa-calendar-days"></i>
         ${tool.published_in}
         </div>
-        <div>
+        <div id='modal'>
         <i class="fa-regular fa-circle-right"></i>
         </div>
         </div>
@@ -36,6 +40,7 @@ const displayData =tools =>{
         `  
         toolContainer.appendChild(toolsDiv);
     })
-    
+
 }  
-loadData();
+
+;
